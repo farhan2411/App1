@@ -5,6 +5,7 @@ import 'package:flutter_app/Hal2.dart';
 import 'package:flutter_app/Hal3.dart';
 import 'package:flutter_app/Hal4.dart';
 import 'package:flutter_app/Hal5.dart';
+import 'package:flutter_app/Hal6.dart';
 
 class Navbar extends StatefulWidget {
   @override
@@ -14,9 +15,9 @@ class Navbar extends StatefulWidget {
 class _NavbarState extends State<Navbar> {
   int selectedpage = 0;
 
-  final halaman =[Hal1(),Hal2(),Scanner(),Hal4(),Hal5()];
+  final halaman =[Hal1(),Hal2(),Scanner(),Hal4(),Hal5(),Hal6()];
 
-  final bgcolor = [Colors.blue, Colors.pink, Colors.black, Colors.purple, Colors.green,];
+  final bgcolor = [Colors.blue, Colors.pink, Colors.black, Colors.purple, Colors.green, Colors.white, ];
 
   @override
   Widget build(BuildContext context) {
@@ -46,6 +47,11 @@ class _NavbarState extends State<Navbar> {
           ),
           Icon(
             Icons.call,
+            size: 30,
+            color: Colors.black45,
+          ),
+          Icon(
+            Icons.email,
             size: 30,
             color: Colors.black45,
           ),
